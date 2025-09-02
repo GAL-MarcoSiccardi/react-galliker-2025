@@ -1,0 +1,30 @@
+
+### GET LUKE SKYWALKER FROM SWAPI
+GET https://swapi.dev/api/people/1/
+Accept: application/json
+
+### GET LUKE SKYWALKER FROM SWAPI PROXY (LOCAL)
+GET http://localhost:3457/swapi/people/1/
+Accept: application/json
+
+### GET TODOS
+GET http://localhost:3457/todos
+Accept: application/json
+
+### ADD TODO AS JSON
+POST http://localhost:3457/todos
+Content-Type: application/json
+
+{
+    "title": "Learn Vaadin",
+    "completed": false
+}
+
+### ADD TODO AS FORM DATA
+POST http://localhost:3457/todos
+Content-Type: application/x-www-form-urlencoded
+
+title=Learn Thymeleaf&completed=false
+
+
+
