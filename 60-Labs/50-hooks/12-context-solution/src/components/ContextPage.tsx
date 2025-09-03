@@ -1,4 +1,4 @@
-import {createContext, useEffect, useState} from 'react';
+import { useEffect, useState} from 'react';
 import { DateContext } from './DateContext';
 import {LevelOne} from './LevelOne';
 
@@ -10,6 +10,7 @@ export function ContextPage() {
   //     setDate(new Date());
   //   }, 1000);
   // }, []);
+  
   function update(){
     setDate(new Date());
   }
@@ -20,9 +21,9 @@ export function ContextPage() {
       <h3 style={{margin: 0}}>Page</h3>
       <div>(state is here)</div>
 
-      <DateContext.Provider value={{date, update}}>
+      <DateContext value={{date, update}}>
         <LevelOne/>
-      </DateContext.Provider>
+      </DateContext>
     </div>
   );
 }

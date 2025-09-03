@@ -1,8 +1,8 @@
-import {useContext} from 'react';
+import { use } from "react";
 import {DateContext} from './DateContext';
 
 export function LevelThree() {
-  const {date, update} = useContext(DateContext);
+  const {date, update} = use(DateContext);
   console.log('LevelThree rendered')
   return (
     <div style={{background: '#ffcc99', padding: 50}}>
